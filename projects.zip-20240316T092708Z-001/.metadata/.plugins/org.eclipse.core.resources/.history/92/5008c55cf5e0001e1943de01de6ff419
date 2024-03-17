@@ -1,0 +1,20 @@
+package ch11.sec02.exam02;
+
+public class ExceptionHandlingExample {
+	public static void main(String[] args) {
+		// 일반 예외 예제
+		
+		try {
+			Class.forName("java.lang.ReflectiveOperationException"); // 존재하는 클래스, 존재하는데 왜 예외처리 해야해?
+//			Class.forName("java.lang.String2"); // 존재 하지 않는 클래스
+			System.out.println("해당클래스가 존재합니다.");// 
+		} catch (ClassNotFoundException e) { // 일반 예외
+			System.out.println("해당 클래스가 존재하지 않습니다.");
+			e.printStackTrace();
+		}
+	}
+
+	}
+
+
+

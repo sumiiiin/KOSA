@@ -1,0 +1,17 @@
+package ch12.check;
+
+public class Student {
+	
+	private String studentNum;
+	
+	public Student(String studentNum) {
+		this.studentNum = studentNum;
+	}
+	
+	public String getStudent() {
+		return studentNum;
+	}
+	
+	// 코드 작성
+
+}

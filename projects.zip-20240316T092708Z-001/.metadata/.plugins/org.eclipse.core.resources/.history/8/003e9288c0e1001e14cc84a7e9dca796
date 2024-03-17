@@ -1,0 +1,14 @@
+package ch12.sec03.exam05;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor // 필드의 값을 전부 매개변수로 생성하겠다.
+public class Member {
+	
+	private String id;
+	private String name;
+	private int age;
+
+}

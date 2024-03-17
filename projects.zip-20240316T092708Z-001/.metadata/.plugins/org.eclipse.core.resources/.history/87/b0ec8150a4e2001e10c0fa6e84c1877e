@@ -1,0 +1,9 @@
+package ch13.sec02.exam03;
+
+public class GenericExample {
+	public static void main(String[] args) {
+		Box box1 = new Box<>();
+		box1.content = "자바";
+	}
+
+}

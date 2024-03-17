@@ -1,0 +1,13 @@
+package ch12.sec08;
+
+import java.time.format.DateTimeFormatter;
+
+public class DateTimeCompareExample {
+
+	public static void main(String[] args) {
+		
+		DateTimeFormatter dtf = new DateTimeFormatter.ofPattern("yyyy.MM.dd a HH:mm:ss");
+
+	}
+
+}

@@ -1,0 +1,15 @@
+package ch07.sec04.exam01;
+
+public class ComputerExample {
+	public static void main(String[] args) {
+		
+		Computer com =  new Computer();
+		double result = com.areaCircle(10);
+//		System.out.println(result);
+		
+		Calculator cal = new Calculator(); // 부모꺼 호출하면 부모껄로 나옴
+		double re = cal.areaCircle(11);
+		System.out.println(re);
+	}
+
+}

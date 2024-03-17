@@ -1,0 +1,31 @@
+package ch07.sec10.exam01;
+
+public class aaa {
+
+}
+class Parent {
+    void display() {
+        System.out.println("Parent's display() method");
+    }
+}
+
+class Child extends Parent {
+    @Override
+    void display() {
+        System.out.println("Child's display() method");
+    }
+}
+
+class Maina {
+    public static void main(String[] args) {
+        Parent parent = new Parent();
+        parent.display(); // Parent 클래스의 display() 메소드 호출
+
+        Child child = new Child();
+        child.display(); // Child 클래스의 display() 메소드 호출
+
+        Parent childAsParent = new Child();
+        childAsParent.display(); // Child 클래스의 display() 메소드가 호출됨
+    }
+}
+

@@ -1,0 +1,24 @@
+package app;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import pack1.A;
+
+import pack2.B;
+
+@AllArgsConstructor
+public class Main {
+
+	public static void main(String[] args) {
+		// 라이브러리에서 가져온 A클래스를 이용하자
+		A a = new A();
+		a.method();
+		
+		// 라이브러리에서 가져온 B클래스를 이용하자		
+		B b = new B();
+		b.method();
+
+	}
+
+}

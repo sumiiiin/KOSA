@@ -1,0 +1,20 @@
+package ch12.sec03.exam05;
+
+import lombok.NonNull;
+import lombok.RequiredArgsConstructor;
+
+//import lombok.AllArgsConstructor;
+//import lombok.Data;
+//import lombok.NoArgsConstructor;
+
+//@Data // 데이터 관련 
+//@AllArgsConstructor // 필드의 값을 전부 매개변수로 생성자 선언
+//@NoArgsConstructor // 기본 생성자 선언
+@RequiredArgsConstructor // 필요하다면 생성해인데 뭐가?필요햐
+public class Member {
+	
+	private String id;
+	@NonNull private String name;
+	private int age;
+
+}

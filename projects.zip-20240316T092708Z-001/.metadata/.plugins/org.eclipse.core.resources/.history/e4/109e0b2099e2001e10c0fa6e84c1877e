@@ -1,0 +1,6 @@
+package ch13.sec01;
+
+public class Box <T> { // 아직 타입이결정 안됨
+	 T content;
+
+}

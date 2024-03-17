@@ -1,0 +1,24 @@
+package ch07.sec10;
+
+public class PhoneExample {
+
+	public static void main(String[] args) {
+		
+//		MobilePhone mp = new MobilePhone("홍길동") { // 추상클래스이기 때문에 new로 객체 생성을 못함
+//		};
+		
+//		AndroidPhone ap = new AndroidPhone("홍길동");
+		MobilePhone mp = new AndroidPhone("홍길동");
+		mp.turnOn();
+		mp.internetSeach();
+		mp.turnOff();
+		System.out.println();
+		
+		MobilePhone mp = new IPhone("홍수민");
+		mp.turnOn();
+		mp.internetSeach();
+		mp.turnOff();
+
+	}
+
+}
