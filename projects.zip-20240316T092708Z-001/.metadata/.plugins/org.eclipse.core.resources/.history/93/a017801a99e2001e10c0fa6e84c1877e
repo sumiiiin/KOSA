@@ -1,9 +1,0 @@
-package ch13.sec01;
-
-public class GenericExample {
-	public static void main(String[] args) {
-		
-		Box<String> box1 = new Box<>;
-	}
-
-}

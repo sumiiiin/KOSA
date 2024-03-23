@@ -1,6 +1,0 @@
-package check.p05;
-
-public interface Remocon {
-	public void powerOn();
-
-}
