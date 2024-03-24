@@ -17,6 +17,7 @@ public class HashtableExample {
 				// 엔트리 100개 추가
 				for(int i = 1; i <= 1000; i++) {
 					map.put(String.valueOf(i),i);
+					//map에 엔트리로 key - string과 value - int를 넣고 있다. 
 				}
 			}
 		};

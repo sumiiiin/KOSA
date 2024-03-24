@@ -20,9 +20,11 @@ public class FilesExample {
 		
 		// 파일 생성 및 데이터 저장
 		Files.writeString(Paths.get("C:/Temp/user.txt"), data, Charset.forName("UTF-8"));
+		// 해당 경로에 data를 UTF-8로 인코딩해서 쓰기(저장)
 		
 		//파일 정보 얻기
 		System.out.println("파일 유형: " + Files.probeContentType(path));
+		// probeContentType메소드는 파일 확장 명에 따른 파일 유형을 리턴
 		System.out.println("파일 크기: " + Files.size(path) + " bytes");
 		
 		//파일 읽기

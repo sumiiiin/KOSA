@@ -24,6 +24,9 @@ public class TreeMapExample {
 		
 		// 정렬된 엔트리 하나씩 가져오기
 		Set<Entry<String, Integer>> entrySet = treeMap.entrySet();
+		// map은 iterable하지 않아서 반복문에 사용하기 어렵다. 
+		// 그래서 set처럼 사용하기 위해 entry를 set에 넣었다.
+		
 		for(Entry<String, Integer> entry : entrySet) {
 			System.out.println(entry.getKey() + "-" + entry.getValue());
 		}
