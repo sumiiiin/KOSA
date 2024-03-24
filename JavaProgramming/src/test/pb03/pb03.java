@@ -32,12 +32,6 @@ public class pb03 {
 		// 자릿수만큼의 길이로 정수 배열 생성 
 		int[] intArrMul = new int[arrMul.length];
 		
-		// 다시 정수로 변환하고 정수배열에 넣기
-		for(int i = 0; i<arrMul.length; i++) {
-			int n = Integer.parseInt(arrMul[i]);
-			intArrMul[i] = n;	
-		}
-		
 		// 각 자릿수 마다 변수 선언
 		int zero = 0;
 		int one = 0;
@@ -50,10 +44,13 @@ public class pb03 {
 		int eight = 0;
 		int nine = 0;
 		
-		
-		// 배열을 돌며 해당하는 숫자에 1씩 더하기
-		for(int i = 0; i<intArrMul.length; i++) {
-			switch (intArrMul[i]) { // for문 하나로
+		// 다시 정수로 변환하고 정수배열에 넣기
+		for(int i = 0; i<arrMul.length; i++) {
+			int n = Integer.parseInt(arrMul[i]);
+			intArrMul[i] = n;	
+			
+			// 배열을 돌며 해당하는 숫자에 1씩 더하기
+			switch (intArrMul[i]) { 
 			case 0: {
 				zero++;
 				break;
@@ -108,11 +105,7 @@ public class pb03 {
 		System.out.println(seven);
 		System.out.println(eight);
 		System.out.println(nine);
-		
-		
-		
-		
-		
+			
 		
 	}
 
